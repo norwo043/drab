@@ -1,0 +1,66 @@
+/* this is where all of your CSS styles go */
+html, body {
+	width: 100%
+	height: 100%;
+}
+
+.grid_container {
+	width: 800px;
+	height: 100px;
+	position: relative;
+	left: 50%;
+	top: 48%; /* for optical centering */
+	margin-top: -50px;
+	margin-left: -100px;
+}
+.mono {
+	font-family: tahoma;
+	font-size: 10em;
+	float: left;
+	margin-left: 5px;
+	position: relative;
+}
+
+@keyframes b_fade {
+	0% { top: 0px; left: 0px; color:pink;}
+	25% { top: -150px; left: 0px; }
+	50% { top: -150px; left: 300px; }
+	100% { top: 0px; left: 300px; }
+}
+
+.b {
+	position: relative;
+	animation: b_fade 2s forwards ease-in;
+}
+
+@keyframes r_fade {
+	0% {color:pink;}
+	100% {color:black;}
+}
+
+.r {
+	position: relative;
+	animation: r_fade 2s forwards ease-in;
+}
+
+@keyframes a_fade {
+	0% {color:pink;}
+	100% {color:black;}
+}
+
+.a {
+	position: relative;
+	animation: a_fade 2s forwards ease-in;
+}
+
+@keyframes d_fade {
+	0% { top: 0px; left: 0px; color:pink;}
+	25% { top: 150px; left: 0px; }
+	50% { top: 150px; left: -300px; }
+	100% { top: 0px; left: -300px; }
+}
+
+.d {
+	position: relative;
+	animation: d_fade 2s forwards ease-in;
+}
